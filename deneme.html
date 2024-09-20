@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish Table</title>
+    <style>
+        body {
+            font-family: 'Arial Narrow Bold', sans-serif;
+            font-size: 14px;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .table-container {
+            width: 60%;
+            margin: 0 auto;
+            overflow-x: auto;
+        }
+        .tables {
+            display: flex;
+            justify-content: space-between;
+        }
+        table {
+            width: auto;
+            text-align: center;
+            border-collapse: collapse;
+            margin: 25px 10px;
+            font-size: 0.8em;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 4px 8px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #e25c13;
+            color: #ffffff;
+        }
+        tr {
+            height: 12px;
+        }
+        tr:nth-child(even) {
+            background-color: #f3f3f3;
+        }
+        tr:hover {
+            background-color: #ffe4c5;
+        }
+        img {
+            width: 100%;
+        }
+        .small-column {
+            width: 1%;
+        }
+    </style>
+</head>
+<body>
+    <div class="table-container">
+        <img src="https://nezih.com.tr/Data/EditorFiles/okuLLar/db.ust.png" alt="">
+        <div class="tables">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Stok Kod</th>
+                        <th>Stok Ad</th>
+                        <th>Barkod</th>
+                        <th class="small-column">Stok Durumu</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>T02884851001191</td>
+                        <td>PENTEL AS305-F MEKANİZMALI VERSATİL 05MM TURUNCU</td>
+                        <td>884851001146</td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <td>T028848510010472</td>
+                        <td>PENTEL AS307-K MEKANİZMALI VERSATİL 07MM YEŞİL</td>
+                        <td>884851001047</td>
+                        <td>36</td>
+                    </tr>
+                    <tr>
+                        <td>T026938623930180</td>
+                        <td>PENTEL AX125W-S FİESTA II VERSATİL 05MM</td>
+                        <td>6938623930180</td>
+                        <td>72</td>
+                    </tr>
+                    <tr>
+                        <td>T026938623930197</td>
+                        <td>PENTEL AX125W-V FİESTA II VERSATİL 05MM</td>
+                        <td>6938623930197</td>
+                        <td>36</td>
+                    </tr>
+                    <tr>
+                        <td>T026938623930265</td>
+                        <td>PENTEL AX127W-K FİESTA II VERSATİL 07MM</td>
+                        <td>6938623930265</td>
+                        <td>36</td>
+                    </tr>
+                    <tr>
+                        <td>T023474371270831</td>
+                        <td>PENTEL BK708-B YAĞ BAZLI ROLLER 08MM KIRMIZI</td>
+                        <td>3474371270831</td>
+                        <td>36</td>
+                    </tr>
+                    <tr>
+                        <td>T024902506070951</td>
+                        <td>PENTEL BL77-A LİKİT JEL ROLLER 07MM SİYAH</td>
+                        <td>4902506070951</td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <td>T02884851011282</td>
+                        <td>PENTEL BLN115W-A ENERGEL İĞNE UÇ JEL ROLLER BEYAZ GÖVDE SİYAH</td>
+                        <td>884851011275</td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <td>T023474377800049</td>
+                        <td>PENTEL BSS78-X WRITEN TOUCH ROLLER 08MM GÜMÜŞ</td>
+                        <td>3474377800049</td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <td>T020725122024702</td>
+                        <td>PENTEL MSP60-ZA ARTS KONTÜR MARKÖRÜ SİYAH/GÜMÜŞ</td>
+                        <td>072512202470</td>
+                        <td>72</td>
+                    </tr>
+                    <tr>
+                        <td>T023474375050033</td>
+                        <td>PENTEL NLF50-B MARKÖR YUVARLAK UÇ KIRMIZI</td>
+                        <td>3474375050033</td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <td>T023474375050026</td>
+                        <td>PENTEL NLF50-C MARKÖR YUVARLAK UÇ MAVİ</td>
+                        <td>3474375050026</td>
+                        <td>36</td>
+                    </tr>
+                    <tr>
+                        <td>T023474375060018</td>
+                        <td>PENTEL NLF60-A MARKÖR KESİK UÇ SİYAH</td>
+                        <td>3474375060018</td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <td>T023474375060032</td>
+                        <td>PENTEL NLF60-B MARKÖR KESİK UÇ KIRMIZI</td>
+                        <td>3474370160034</td>
+                        <td>36</td>
+                    </tr>
+                    <tr>
+                        <td>T023474375060025</td>
+                        <td>PENTEL NLF60-C MARKÖR KESİK UÇ MAVİ</td>
+                        <td>3474375060025</td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <td>T023474372203005</td>
+                        <td>PENTEL P203 TEKNİK ÇİZİM VERSATİL 03MM</td>
+                        <td>3474372203005</td>
+                        <td>36</td>
+                    </tr>
+                    <tr>
+                        <td>T023474372205030</td>
+                        <td>PENTEL P205-B TEKNİK ÇİZİM VERSATİL 05MM KIRMIZI</td>
+                        <td>3474372205030</td>
+                        <td>72</td>
+                    </tr>
+                    <tr>
+                        <td>T024902506068934</td>
+                        <td>PENTEL PD257-AO SIDE FX VERSATİL 07MM SİYAH</td>
+                        <td>4902506068927</td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <td>T023474377920440</td>
+                        <td>PENTEL PD307T-V TECHNICLİCK 07MM MOR</td>
+                        <td>3474377920440</td>
+                        <td>72</td>
+                    </tr>
+                    <tr>
+                        <td>T02072512250723</td>
+                        <td>PENTEL QE207-A TWİST-ERASE VERSATİL 07MM SİYAH</td>
+                        <td>072512250723</td>
+                        <td>36</td>
+                    </tr>
+                    <tr>
+                        <td>T023474375000823</td>
+                        <td>PENTEL ZEL-08 HI-POLYMER SİLGİ LIGHT</td>
+                        <td>3474375000823</td>
+                        <td>252</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Stok Kod</th>
+                        <th>Stok Ad</th>
+                        <th>Barkod</th>
+                        <th class="small-column">Stok Durumu</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>T02884851001191</td>
+                        <td>PENTEL AS305-F MEKANİZMALI VERSATİL 05MM TURUNCU</td>
+                        <td>884851001146</td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <td>T028848510010472</td>
+                        <td>PENTEL AS307-K MEKANİZMALI VERSATİL 07MM YEŞİL</td>
+                        <td>884851001047</td>
+                        <td>36</td>
+                    </tr>
+                    <tr>
+                        <td>T026938623930180</td>
+                        <td>PENTEL AX125W-S FİESTA II VERSATİL 05MM</td>
+                        <td>6938623930180</td>
+                        <td>72</td>
+                    </tr>
+                    <tr>
+                        <td>T026938623930197</td>
+                        <td>PENTEL AX125W-V FİESTA II VERSATİL 05MM</td>
+                        <td>6938623930197</td>
+                        <td>36</td>
+                    </tr>
+                    <tr>
+                        <td>T026938623930265</td>
+                        <td>PENTEL AX127W-K FİESTA II VERSATİL 07MM</td>
+                        <td>6938623930265</td>
+                        <td>36</td>
+                    </tr>
+                    <tr>
+                        <td>T023474371270831</td>
+                        <td>PENTEL BK708-B YAĞ BAZLI ROLLER 08MM KIRMIZI</td>
+                        <td>3474371270831</td>
+                        <td>36</td>
+                    </tr>
+                    <tr>
+                        <td>T024902506070951</td>
+                        <td>PENTEL BL77-A LİKİT JEL ROLLER 07MM SİYAH</td>
+                        <td>4902506070951</td>
+                        <td>24</td>
+                    </tr>
+                          <td>T02884851011282</td>
+                          <td>PENTEL BLN115W-A ENERGEL İĞNE UÇ JEL ROLLER BEYAZ GÖVDE SİYAH</td>
+                          <td>884851011275</td>
+                          <td>24</td>
+                      </tr>
+                      <tr>
+                          <td>T023474377800049</td>
+                          <td>PENTEL BSS78-X WRITEN TOUCH ROLLER 08MM GÜMÜŞ</td>
+                          <td>3474377800049</td>
+                          <td>24</td>
+                      </tr>
+                      <tr>
+                          <td>T020725122024702</td>
+                          <td>PENTEL MSP60-ZA ARTS KONTÜR MARKÖRÜ SİYAH/GÜMÜŞ</td>
+                          <td>072512202470</td>
+                          <td>72</td>
+                      </tr>
+                      <tr>
+                          <td>T023474375050033</td>
+                          <td>PENTEL NLF50-B MARKÖR YUVARLAK UÇ KIRMIZI</td>
+                          <td>3474375050033</td>
+                          <td>24</td>
+                      </tr>
+                      <tr>
+                          <td>T023474375050026</td>
+                          <td>PENTEL NLF50-C MARKÖR YUVARLAK UÇ MAVİ</td>
+                          <td>3474375050026</td>
+                          <td>36</td>
+                      </tr>
+                      <tr>
+                          <td>T023474375060018</td>
+                          <td>PENTEL NLF60-A MARKÖR KESİK UÇ SİYAH</td>
+                          <td>3474375060018</td>
+                          <td>24</td>
+                      </tr>
+                      <tr>
+                          <td>T023474375060032</td>
+                          <td>PENTEL NLF60-B MARKÖR KESİK UÇ KIRMIZI</td>
+                          <td>3474370160034</td>
+                          <td>36</td>
+                      </tr>
+                      <tr>
+                          <td>T023474375060025</td>
+                          <td>PENTEL NLF60-C MARKÖR KESİK UÇ MAVİ</td>
+                          <td>3474375060025</td>
+                          <td>24</td>
+                      </tr>
+                      <tr>
+                          <td>T023474372203005</td>
+                          <td>PENTEL P203 TEKNİK ÇİZİM VERSATİL 03MM</td>
+                          <td>3474372203005</td>
+                          <td>36</td>
+                      </tr>
+                      <tr>
+                          <td>T023474372205030</td>
+                          <td>PENTEL P205-B TEKNİK ÇİZİM VERSATİL 05MM KIRMIZI</td>
+                          <td>3474372205030</td>
+                          <td>72</td>
+                      </tr>
+                      <tr>
+                          <td>T024902506068934</td>
+                          <td>PENTEL PD257-AO SIDE FX VERSATİL 07MM SİYAH</td>
+                          <td>4902506068927</td>
+                          <td>24</td>
+                      </tr>
+                      <tr>
+                          <td>T023474377920440</td>
+                          <td>PENTEL PD307T-V TECHNICLİCK 07MM MOR</td>
+                          <td>3474377920440</td>
+                          <td>72</td>
+                      </tr>
+                      <tr>
+                          <td>T02072512250723</td>
+                          <td>PENTEL QE207-A TWİST-ERASE VERSATİL 07MM SİYAH</td>
+                          <td>072512250723</td>
+                          <td>36</td>
+                      </tr>
+                      <tr>
+                          <td>T023474375000823</td>
+                          <td>PENTEL ZEL-08 HI-POLYMER SİLGİ LIGHT</td>
+                          <td>3474375000823</td>
+                          <td>252</td>
+                      </tr>
+                </tbody>
+            </table>
+        </div>
+        <img src="https://nezih.com.tr/Data/EditorFiles/okuLLar/db.alt.png" alt="header">
+    </div>
+</body>
+</html>
