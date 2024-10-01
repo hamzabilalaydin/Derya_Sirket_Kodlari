@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel Merger</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        #loader {
+            display: none; /* Hidden by default */
+            border: 8px solid #f3f3f3; /* Light grey */
+            border-top: 8px solid #3498db; /* Blue */
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <h1>Excel Merger</h1>
+    <form id="uploadForm" enctype="multipart/form-data">
+        <label for="table1">Upload Table 1 (Adet):</label>
+        <input type="file" name="table1" accept=".xlsx" required><br><br>
+        <label for="table2">Upload Table 2 (Rapor):</label>
+        <input type="file" name="table2" accept=".xlsx" required><br><br>
+        <button type="submit">Merge</button>
+    </form>
+    <div id="loader"></div>
+
+    <script>
+        document.getElementById('uploadForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const formData = new FormData(this);
+            
+            // Show the loader
+            document.getElementById('loader').style.display = 'block';
+
+            fetch('/upload', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => {
+                if (response.ok) {
+                    return response.blob();
+                }
+                throw new Error('File upload failed');
+            })
+            .then(blob => {
+                const url = window.URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'updated_table2.xlsx';
+                document.body.appendChild(a);
+                a.click();
+                a.remove();
+            })
+            .catch(error => {
+                console.error(error);
+                alert('Error occurred during upload');
+            })
+            .finally(() => {
+                // Hide the loader
+                document.getElementById('loader').style.display = 'none';
+            });
+        });
+    </script>
+</body>
+</html>
