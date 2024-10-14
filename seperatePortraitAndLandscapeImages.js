@@ -50,5 +50,5 @@ function separateAndMoveImages(imagesDir) {
 }
 
 // Example usage
-const imagesDir = 'C:/Users/hamzaa/Desktop/Viva_Yeni'; // Change this to the path of your images folder
+const imagesDir = 'C:/Users/hamzaa/Desktop/ArtBoya'; // Change this to the path of your images folder
 separateAndMoveImages(imagesDir);
