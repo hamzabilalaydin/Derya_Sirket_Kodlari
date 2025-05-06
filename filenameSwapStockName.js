@@ -4,8 +4,8 @@ const fs = require('fs');
 
 
 //EXCEL ve klasor yolu her ullanimda degistirmeyi unutma
-const gorselKlasoru = "C:/Users/hamzaa/Desktop/Şahin Kırtasiye"
-const excelDosyasi = "C:/Users/hamzaa/Desktop/MIKRO_AIHAO_ONAS_imaj_rapor_olmayanlar_1714380032.xls"
+const gorselKlasoru = "C:/Users/hamzaa/Desktop/GÖRSEL/Talens/TalensYeni"
+const excelDosyasi = "C:/Users/hamzaa/Desktop/GÖRSEL/Talens/Talens_Eksik_Görsel.xls"
 
 
 // Path to your Excel file
